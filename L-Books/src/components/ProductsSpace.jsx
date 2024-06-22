@@ -7,12 +7,12 @@ function ProductSpace(){
             </div>
 
             <div className="productB">
-                <img src="./src/imgs/eletronics.png" alt="Books" />
+                <img src="./src/imgs/eletronics.png" alt="Eletronics" />
                 <p>Eletrônicos</p>
             </div>
 
             <div className="productB">
-                <img src="./src/imgs/books.png" alt="Books" />
+                <img src="./src/imgs/moveis.png" alt="Moveis" />
                 <p>Moveis</p>
             </div>
 
