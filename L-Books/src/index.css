@@ -1,21 +1,38 @@
 body{
   background-color: aliceblue;
   margin: 0;
+  padding: 0;
 }
 .App{
   height: 100%;
+  margin: 0;
+}
+.MoveisPage{
+  height: 100%;
+  margin: 0;
 }
 header{
-  position: relative;
-  display: flex;
-  justify-content: center;
-  margin: 0 auto 16px auto;
-  background-color: orange;
-  padding: 4px 1px;
-}
-nav#navBar{
   display: flex;
   justify-content: space-between;
+  background-color: orange;
+  padding:4px 12px 0 12px;
+  margin: 0 0 24px 0;
+}
+header>p{
+  margin: 8px 0;
+  width: 20vw;
+  color: aliceblue;
+  text-align: center;
+  font-size: 2.4em;
+  padding: 0;
+}
+nav#navBar{
+  padding-bottom: 12px;
+}
+ul{
+  display: flex;
+  justify-content: right;
+  list-style: none;
 }
 
 #footer{
@@ -23,13 +40,13 @@ nav#navBar{
   font-family: sans-serif;
   font-weight: bolder;
   text-align: center;
-  position: relative;
   bottom: 0;
   width: 100%;
   background-color: orange;
   height: 80px;
 }
 #burguer{
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -63,11 +80,12 @@ a:hover{
   align-content: center;
   display: flex;
   flex-wrap:wrap;
-  margin: auto;
+  margin: auto auto 24px auto;
   width:100%;
   max-width: 1280px;
   height:fit-content;
   background-color: rgb(235, 235, 235);
+  box-shadow: 3px 3px 12px 12px rgb(218, 218, 218);
 }
 .productB{
   text-align: center;
@@ -85,7 +103,7 @@ a:hover{
   cursor: pointer;
   width: 100%;
   height: 100%;
-  border-radius: 50%;
+  clip-path: circle();
 }
 .productB>img:hover{
   width: 250px;
@@ -102,6 +120,7 @@ a:hover{
   margin: 56px auto;
   position: relative;
   width:920px;
+  cursor:pointer;
 }
 #carrossel>img{
   width: 100%;

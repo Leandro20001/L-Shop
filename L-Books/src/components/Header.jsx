@@ -8,11 +8,14 @@ function Header(){
     <div id="burguer">
             <img onClick={show} src="./src/imgs/burguerIco.png" alt=""/>
     </div>
-    <nav id="navBar">
-                <a href=".">Home</a>
-                <a href=".">Promotions</a>
-               <a href=".">Your Cart</a>
-    </nav>
+    <p>L-SHOP</p>
+        <nav id="navBar">
+         <ul>
+            <li><a href=".">Home</a></li>
+            <li><a href=".">Promotions</a></li>
+            <li><a href=".">Your Cart</a></li>
+         </ul>
+        </nav>
     </header>
     </>
     )
