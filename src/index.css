@@ -1,0 +1,518 @@
+body{
+  height: 100%;
+  background-color: aliceblue;
+  margin: 0;
+  padding: 0;
+}
+
+.MoveisPage{
+  height: 100%;
+  margin: 0;
+}
+#moveCarrossel{
+  width: 100%;
+  text-align: center;
+  margin:auto;
+  margin-bottom: 24px;
+}
+#moveCarrossel button{
+  cursor: pointer;
+  font-size: 1.4rem;
+  border-radius: 20px;
+  color: aliceblue;
+  border: 1px solid rgb(159, 117, 4);
+  background-color: rgb(255, 245, 228);
+  width: 32px;
+  height: 32px;
+  margin: 8px;
+}
+#moveCarrossel button:hover{
+  background-color: rgb(255, 255, 255);
+
+}
+
+
+
+
+
+
+#logoT{
+  top: 28.4px;
+  position: absolute;
+  width: fit-content;
+}
+header{
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 12px;
+  width: 100%;
+  display: flex;
+  background-color: orange;
+  margin: auto 0 22px 0;
+}
+#searchBar{
+  display: block;
+  margin: auto auto 24px auto;
+  border: 1px solid black;
+  border-radius: 32px;
+  box-sizing: border-box;
+  padding: 8px;
+  width:70%;
+  max-width: 600px;
+  min-width: 200px;
+  font-size: 20px;
+  height: fit-content;
+}
+
+#invalid{
+  box-sizing: border-box;
+  padding: 8px;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  display: block;
+  font-size: 20px;
+  font-family: sans-serif;
+  background-color: rgb(178, 10, 10);
+  color: aliceblue;
+}
+#loginForm{
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  width: fit-content;
+  max-width: 500px;
+  height: fit-content;
+  min-height: 240px;
+  flex-wrap: wrap;
+}
+#loginForm label{
+  padding: 12px;
+  font-family: sans-serif;
+  font-size: 24px;
+  display: flex;
+  margin: 4px auto 4px auto;
+  padding-block: 8px;
+  width: 100%;
+  height: fit-content;
+}
+#loginForm input{
+  font-size: 20px;
+  margin: 0 0 0 8px;
+  width: 80%;
+  max-width: 400px;
+  height: fit-content;
+}
+#logLink{
+  letter-spacing: 1px;
+  font-family: sans-serif;
+  font-size: 20px;
+  display: block;
+  margin:30px auto;
+  justify-content: center;
+  position:relative;
+  text-align: center;
+  width: fit-content;
+  text-decoration: none;
+  align-self: flex-end;
+  color: rgb(210, 140, 9);
+}
+#logSpan{
+  min-width: fit-content;
+  width: 20px;
+  display: block;
+  margin: 8px auto 40px;
+  font-family: sans-serif;
+  font-size: 32px;
+  color: aliceblue;
+  background-color: orange;
+  font-weight: bold;
+  padding: 16px;
+}
+#logBtn{
+  background-color: orange;
+  color: aliceblue;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  margin: auto;
+  height:56px;
+  width: 300px;
+  cursor: pointer;
+  transition: 200ms;
+
+}
+#logBtn:hover{
+  background-color: rgba(255, 166, 0, 0.716);
+
+}
+.displayCards{
+  justify-content: center;
+ display: flex;
+ width: 100%;
+ flex-wrap:wrap ;
+}
+.pCard{
+  margin:48px;
+  margin-bottom: 10px;
+  padding-block: 22px;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 64% 40px 40px 25%;
+  flex-wrap:wrap ;
+  border: 1px solid black;
+  width: 520px;
+  height: fit-content;
+}
+#spanCartModal{
+  transition: 200ms;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  position: fixed;
+  width: 300px;
+  height: 200px;
+  font-size: 2rem;
+  color: rgb(255, 145, 0);
+  background-color: aliceblue;
+  border: solid black 1px;
+}
+
+.pCard:last-child{
+  margin-bottom: 140px;
+}
+.showONEproduct{
+  
+  padding: 32px 36px;
+  background-color: rgb(240, 254, 255);
+  justify-content: center;
+  margin: 32px auto;
+  display: grid;
+  grid-template-rows: 60% ,42px, 1fr;
+  grid-template-columns: 56% 1fr;
+
+}
+.showONEproduct span{
+  background-color: orange;
+  width: 100%;
+  height: fit-content;
+  grid-column: 2;
+  text-align: center;
+  color: aliceblue;
+  letter-spacing: 1px;
+  font-family: sans-serif;
+  font-size: 2rem;
+}
+.showONEproduct p{
+  letter-spacing: 0.8px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  background-color: rgb(230, 230, 240);
+  grid-column: 3;
+  color: rgb(117, 90, 4);
+  font-family: sans-serif;
+  font-size: 1.4rem;
+}
+#img{
+  width: 88%;
+  background-color: red;
+  justify-self: center;
+  justify-content: center;
+
+}
+#img img{
+  width: 100%;
+  max-height: 100%;
+}
+.showONEproduct img{
+  display: block;
+  margin: auto;
+  justify-content: center;
+  background-color: rgb(22, 48, 71);
+  grid-row: 1;
+  width: 300px;
+}
+.pCard span{
+  display: block;
+  text-align: center;
+  font-size: 26px;
+  font-family: sans-serif;
+  font-weight: bold;
+  grid-row: 2;
+  color: rgb(115, 88, 51);
+}
+#spanCart{
+  margin: 0;
+  box-sizing: border-box;
+  padding: 12px;
+  height: fit-content;
+  width: fit-content;
+  background-color: green;
+  color: aliceblue;
+ 
+}
+.productSpan{
+  grid-row: 2;
+}
+.buyButton{
+  font-size: 24px;
+  font-weight: bold;
+  margin: 24px auto;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  height: 60px;
+  background-color: orange;
+  color: aliceblue;
+  border: none;
+  cursor: pointer;
+  transition: 200ms;
+}
+.cartButton{
+  border: none;
+  border: 1px solid black;
+  background-color: rgb(237, 237, 237);
+  cursor: pointer;
+  transition: 200ms;
+  width: 100%;
+  max-width: 400px;
+  height: 32px;
+  display: block;
+  margin: auto auto 24px auto;
+}
+.buyButton:hover{
+
+  background-color: rgb(255, 185, 56);
+}
+.pCard .buyButton:hover{
+  background-color: rgb(255, 185, 56);
+}
+.routeH{
+  text-align: center;
+  font-family: sans-serif;
+}
+
+
+#logoT{
+  font-size: 24px;
+  width: fit-content;
+  color: aliceblue;
+  margin:auto ;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+#username{
+  display: flex;
+  width: fit-content;
+  font-size: 12px;
+}
+.hide{
+  opacity: 0;
+}
+.modal{
+  z-index: 31;
+  border: 1px solid black;
+  display: flex;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 720px;
+  height: 400px;
+  color: black;
+  background-color: rgb(255, 255, 255);
+}
+#fade{
+  z-index: 30;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height:140%;
+  background-color: rgba(0, 0, 0, 0.704);
+}
+#closeButton{
+  cursor: pointer;
+  background-color: orange;
+  color: aliceblue;
+  display: block;
+  margin-left: 688px;
+  border: none;
+  font-weight: bolder;
+  width: 32px;
+  height: 32px;
+
+}
+nav#navBar{
+  margin: auto 0 auto auto;
+  display:flex;
+  width: fit-content;
+  font-size: 8px;
+}
+ul{
+  position: relative;
+  right:0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+li{
+  cursor: pointer;
+  margin: auto;
+  width: fit-content;
+  display: flex;
+}
+
+#footer{
+  position: relative;
+  color: aliceblue;
+  font-family: sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  background-color: orange;
+  height: 80px;
+}
+#burguer{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  background-color: orange;
+  width: 72px;
+}
+#burguer:hover{
+  background-color: rgb(204, 137, 11);
+}
+#burguer>img{
+  width: 100%;
+  height: 100%;
+}
+header a{
+  position: relative;
+  transition: 200ms;
+  padding: 8px;
+  color: aliceblue;
+  margin: 0 12px 0 12px;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-family: sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.4px;
+}
+.userPic{
+  cursor: pointer;
+  display: block;
+  background-color: rgb(215, 134, 77);
+  clip-path: circle();
+  width: 44px;
+  height: 44px;
+}
+#desLog{
+  margin-left: 12px;
+  width:50px;
+  cursor: pointer;
+  background-color: rgb(220, 151, 0);
+  color: aliceblue;
+  border: none;
+}
+#desLogPopUp{
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding-block: 12px;
+  z-index: 30;
+  position: absolute;
+  right: 0;
+  background-color: rgb(227, 147, 9);
+  color: aliceblue;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  width: 300px;
+  height: 120px;
+}
+#desLogPopUp span{
+  width: 280px;
+}
+#desLogPopUp button{
+  font-weight: bold;
+  cursor: pointer;
+  margin: 8px;
+  width: 112px;
+  background-color: aliceblue;
+  color: orange;
+  border: none;
+  border-radius: 24px;
+}
+#desLogPopUp button:hover{
+  background-color: rgb(255, 242, 226);
+}
+#productSpace{
+  align-content: center;
+  display: flex;
+  flex-wrap:wrap;
+  margin: auto auto 24px auto;
+  width:100%;
+  max-width: 1280px;
+  height:fit-content;
+  background-color: rgb(243, 243, 243);
+  box-shadow: 2px 2px 12px 4px rgb(218, 218, 218);
+}
+.productB{
+  text-align: center;
+  width: 140px;
+  height: 140px;
+  margin:24px auto 0px auto;
+  border-radius: 50%;
+  box-shadow: 2px 2px 12px 3px rgba(0, 0, 0, 0.311);
+  background-color: aliceblue;
+}
+.productB:last-child{
+  margin-right: 0;
+}
+.productB>img{
+  margin: 0;
+  transition: 200ms;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  clip-path: circle();
+}
+.productB>img:hover{
+  width: 148px;
+  height: 148px;
+}
+.productB>p{
+  margin: 12px auto;
+  font-size: 28px;
+  font-family: sans-serif;
+  letter-spacing: 0.4px;
+  font-weight: bolder;
+}
+#carrossel{
+  transition: 200ms;
+  margin:106px auto 0 auto;
+  position: relative;
+  width:92%;
+  max-width: 880px;
+  height: 480px;
+  max-height: 44vh;
+  cursor:pointer;
+}
+#carrossel>img{
+  position: absolute;
+  transition: 200ms;
+  width: 100%;
+  height: 100%;
+}
