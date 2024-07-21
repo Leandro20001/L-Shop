@@ -1,12 +1,13 @@
-
-const stripe = require('stripe')('sk_test_51Pb2mfENKsQJ9EVVGjh031s97T2oZwGRQdegmyEuKggxtgYe13SvEmo3wfVDyO0zAQmP3oOSIBojNSbH6swqHQ4400KaMnJPeR')
+import dotenv from 'dotenv'
+dotenv.config({path: path.resolve('../.env')})
+const stripe = require('stripe')(process.env.STRIPE_ID)
 
 const session = (async()=>{
     await stripe.checkout.sessions.create({
         success_url: 'https://example.com/success',
         line_items: [
           {
-            price: 'price_1Pe5ITENKsQJ9EVVyjPmbvZB',
+            price:process.env.PRICE_ID,
             quantity: 1,
           },
         ],
