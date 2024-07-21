@@ -15,13 +15,16 @@ function Header(){
     <>
     {console.log(user)}
     <header>
-    <div id="burguer">
-            <img onClick={show} src="./src/imgs/burguerIco.png" alt=""/>
-    </div>
     <p id="logoT">L-SHOP</p>
-    <NavOptions>
-        <UserPic/>
-    </NavOptions>
+    <div id="mobileOptions">
+        <img src="../src/imgs/burguerIco.png" alt="" />
+    </div>
+
+    <div id="desktopOptions">
+        <NavOptions>
+            <UserPic/>
+        </NavOptions>
+    </div>
     </header>
     <input id="searchBar" type="text" placeholder="Buscar Produto" />
     </>

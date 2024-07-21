@@ -1,18 +1,28 @@
 import { useNavigate } from "react-router-dom"
-import { useState } from "react"
-
+import { useContext, useState } from "react"
 import CartSpan from "./CartSpan"
+import { CartContext } from "../context/CartContext"
 
 
 
-function ProductCard({name,price,purchase,id,hide}){
+function ProductCard({name,price,id,img,hide}){
     const [spanCard,setSpanCard] = useState(false)
-
     {spanCard&&setTimeout(()=>{setSpanCard('hide')},3000)}
 
+    const [add,setAdd]= useState({
+        id:id,
+        name:name,
+        price:price,
+        img:img
 
+    })
+    const {cart,setCart} = useContext(CartContext)
 
-    //trazer context cart
+    const addItem = ()=>{
+        setCart([...cart,add])
+    }
+    
+
     const navigate = useNavigate()
     return(
         <>
@@ -33,6 +43,10 @@ function ProductCard({name,price,purchase,id,hide}){
 
                 <button className="cartButton" onClick={()=>{
                     setSpanCard(true)
+                    setAdd({...add,id:id,name:name,price:price})
+                    setTimeout(()=>{
+                        addItem()
+                    },200)
                 }}>
                     Adicionar Ao Carrinho
                 </button>

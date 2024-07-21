@@ -1,0 +1,9 @@
+.selectCategoryDiv{
+    box-sizing: border-box;
+    padding-left: 100vw;
+    justify-content: center;
+    overflow-x: scroll;
+    width:fit-content;
+    height: 280px;
+    display: flex;
+  }

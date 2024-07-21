@@ -46,16 +46,19 @@ import { LogProvider } from './context/LogContext.jsx';
 import ProductPage from './pages/ProductPage.jsx';
 import LoginPage from './pages/LoginPage.jsx';
 import LogPage from './pages/LogPage.jsx';
+import {CartProvider } from './context/CartContext.jsx';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
 
     <LogProvider>
-        <RouterProvider
-        router={router}>
-       </RouterProvider>
-       <Footer/>
+        <CartProvider>
+          <RouterProvider
+          router={router}>
+        </RouterProvider>
+        <Footer/>
+        </CartProvider>
     </LogProvider>
   </React.StrictMode>
 )

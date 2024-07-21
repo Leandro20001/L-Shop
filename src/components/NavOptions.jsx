@@ -1,6 +1,7 @@
 import { useContext, useState } from "react"
 import { LogContext, LogProvider } from "../context/LogContext"
 import { Link } from "react-router-dom"
+import { CartModal } from "./CartModal"
 
 
 
@@ -8,13 +9,21 @@ function NavOptions ({children,home,userName}){
 
     const {log,desLog,user} = useContext(LogContext)
     const [showOption,setShowOptions] = useState(false)
+    const [openCart,setOpenCart] = useState(false)
 
     return(
         <>
-        <nav id="navBar">
+        <div onMouseLeave={()=>{
+            setOpenCart(false)
+        }}><CartModal  open={openCart}/></div>
+        <nav>
          <ul>
             <li><Link to={'/'}>Início</Link></li>
-            <li><a>Carrinho</a></li>
+            <li onClick={()=>{
+                setOpenCart(true)
+            }} onMouseEnter={()=>{
+                setOpenCart(true)
+            }}><a>Carrinho</a></li>
             {log !== false ? <><li><a id="username">{user}</a></li>
 
             <div

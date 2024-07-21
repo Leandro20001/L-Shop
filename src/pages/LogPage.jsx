@@ -47,7 +47,7 @@ function LogPage(){
         <>
         <span id="logSpan">Entre</span>
         <form id="loginForm">
-            <label>E-mail
+            <label><span>E-mail</span>
                 <input
                 onChange={(e)=>{
                     setEnter({...enter,email:e.target.value})
@@ -56,7 +56,7 @@ function LogPage(){
                 type="text" />
             </label>
 
-            <label>Senha
+            <label><span>Senha</span>
                 <input
                 onChange={(e)=>{
                     setEnter({...enter,password:e.target.value})
