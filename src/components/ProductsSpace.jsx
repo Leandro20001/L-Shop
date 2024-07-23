@@ -50,18 +50,7 @@ function ProductSpace(){
                     <img onClick={booksPage} src="./src/imgs/books.png" alt="Books" />
                     <p>Livros</p>
                 </div>
-                <div className="productB">
-                    <img onClick={booksPage} src="./src/imgs/books.png" alt="Books" />
-                    <p>Livros</p>
-                </div>
-                <div className="productB">
-                    <img onClick={booksPage} src="./src/imgs/books.png" alt="Books" />
-                    <p>Livros</p>
-                </div>
-                <div className="productB">
-                    <img onClick={booksPage} src="./src/imgs/books.png" alt="Books" />
-                    <p>Livros</p>
-                </div>
+                
 
                 <div className="productB">
                     <img onClick={eletronicsPage}  src="./src/imgs/eletronics.png" alt="Eletronics" />

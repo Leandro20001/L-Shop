@@ -485,14 +485,15 @@ header a{
   display: flex;
   flex-wrap:wrap;
   margin: auto auto 24px auto;
-  width: 94vw;
+  width: 98%;
   height:fit-content;
   background-color: rgb(243, 243, 243);
   box-shadow: 2px 2px 12px 4px rgb(218, 218, 218);
 }
 .selectCategoryDiv{
+  justify-content: center;
   margin: 20px auto;
-  width:fit-content;
+  width:100%;
   overflow-x:auto;
   height: 300px;
   display:flex;
