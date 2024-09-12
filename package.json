@@ -23,7 +23,8 @@
     "react-router-dom": "^6.23.1",
     "sequelize": "^6.37.3",
     "stripe": "^16.2.0",
-    "styled-components": "^6.1.11"
+    "styled-components": "^6.1.11",
+    "zustand": "^4.5.5"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

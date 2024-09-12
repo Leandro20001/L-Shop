@@ -7,8 +7,8 @@ body{
 #banner{
   margin: auto;
   width: 100%;
-  max-width: 1120px;
-  height: 720px;
+  max-width: 840px;
+  height: 500px;
   background-color: rgb(168, 168, 168);
 }
 #banner img{
@@ -53,7 +53,7 @@ header{
   width: 100%;
   height: 72px;
   display: flex;
-  background-color: orange;
+  background-color: rgb(205, 3, 3);
   margin: auto 0 22px 0;
 }
 #searchBar{
@@ -146,7 +146,7 @@ header{
 }
 #logBtn{
   border-radius: 30px;
-  background-color: orange;
+  background-color: rgb(205, 3, 3);
   color: aliceblue;
   border: none;
   font-weight: bold;
@@ -193,7 +193,7 @@ header{
   width: 300px;
   height: 200px;
   font-size: 2rem;
-  color: rgb(255, 145, 0);
+  background-color: rgb(205, 3, 3);
   background-color: aliceblue;
   border: solid black 1px;
 }
@@ -213,7 +213,7 @@ header{
 
 }
 .showONEproduct span{
-  background-color: orange;
+  background-color: rgb(205, 3, 3);
   width: 100%;
   height: fit-content;
   grid-column: 2;
@@ -285,7 +285,7 @@ header{
   width: 100%;
   max-width: 400px;
   height: 60px;
-  background-color: orange;
+  background-color: rgb(205, 3, 3);
   color: aliceblue;
   border: none;
   cursor: pointer;
@@ -361,7 +361,7 @@ header{
 }
 #closeButton{
   cursor: pointer;
-  background-color: orange;
+  background-color: rgb(205, 3, 3);
   color: aliceblue;
   display: block;
   margin-left: 688px;
@@ -400,7 +400,7 @@ li{
   text-align: center;
   bottom: 0;
   width: 100%;
-  background-color: orange;
+  background-color: rgb(205, 3, 3);
   height: 80px;
 }
 #burguer{
@@ -409,7 +409,7 @@ li{
   top: 0;
   left: 0;
   cursor: pointer;
-  background-color: orange;
+  background-color: rgb(205, 3, 3);
   width: 72px;
 }
 #burguer:hover{
@@ -434,7 +434,7 @@ header a{
 .userPic{
   cursor: pointer;
   display: block;
-  background-color: rgb(215, 134, 77);
+  background-color: rgb(255, 222, 222);
   clip-path: circle();
   width: 44px;
   height: 44px;
@@ -443,7 +443,7 @@ header a{
   margin-left: 12px;
   width:50px;
   cursor: pointer;
-  background-color: rgb(220, 151, 0);
+  background-color: rgb(205, 3, 3);
   color: aliceblue;
   border: none;
 }
@@ -455,7 +455,7 @@ header a{
   z-index: 30;
   position: absolute;
   right: 0;
-  background-color: rgb(227, 147, 9);
+  background-color: rgb(205, 3, 3);
   color: aliceblue;
   text-align: center;
   font-family: sans-serif;
@@ -473,7 +473,7 @@ header a{
   margin: 8px;
   width: 112px;
   background-color: aliceblue;
-  color: orange;
+  background-color: rgb(205, 3, 3);
   border: none;
   border-radius: 24px;
 }
@@ -484,11 +484,10 @@ header a{
   align-content: center;
   display: flex;
   flex-wrap:wrap;
-  margin: auto auto 24px auto;
-  width: 98%;
+  margin: 60px auto 24px auto;
+  width: 100%;
   height:fit-content;
-  background-color: rgb(243, 243, 243);
-  box-shadow: 2px 2px 12px 4px rgb(218, 218, 218);
+  box-shadow: 2px 2px 12px 4px rgb(244, 244, 244);
 }
 .selectCategoryDiv{
   justify-content: center;
@@ -580,12 +579,11 @@ width: 100%;
 
 #carrossel{
   transition: 200ms;
-  margin:106px auto 0 auto;
+  margin:106px auto 60px auto;
   position: relative;
   width:80vw;
-  max-width: 880px;
-  height: 480px;
-  max-height: 44vh;
+  max-width: 640px;
+  height: 360px;
   cursor:pointer;
 }
 #carrossel>img{
